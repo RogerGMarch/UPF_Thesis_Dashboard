@@ -12,7 +12,7 @@ import os
 # Function to read an Excel data file
 def read_excel_data(filename):
     # If the script is run from the directory containing the 'scr' and 'data' directories:
-    data_file_path = os.path.join('..', 'data', filename)
+    data_file_path = os.path.join('data', filename)
 
     # Read the Excel file
     data = pd.read_excel(data_file_path,header=0)
