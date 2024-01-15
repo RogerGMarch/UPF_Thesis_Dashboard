@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+
 import os
 
 # Load the data
@@ -61,7 +61,7 @@ top_degrees_df = pd.DataFrame({'Degree': top_degrees.index, 'Count': top_degrees
 
 # Sort the DataFrame by 'Count' in descending order
 top_degrees_df.sort_values('Count', ascending=False, inplace=True)
-
+import matplotlib.pyplot as plt
 # Create a bar plot using Matplotlib
 fig, ax = plt.subplots()
 ax.bar(top_degrees_df['Degree'], top_degrees_df['Count'])
